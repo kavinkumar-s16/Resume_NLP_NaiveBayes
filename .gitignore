@@ -1,0 +1,12 @@
+# Ignore personal resume
+KAVIN KUMAR ATS RESUME.docx
+KAVIN KUMAR ATS RESUME.pdf
+
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
