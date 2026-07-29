@@ -9,7 +9,10 @@ from nltk.stem import WordNetLemmatizer
 
 
 # Download NLTK files (for Streamlit cloud)
+import nltk
+
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
@@ -50,7 +53,10 @@ def preprocess_text(text):
 
 
     # tokenization
-    tokens = word_tokenize(text)
+    tokens = word_tokenize(
+    text,
+    preserve_line=True
+)
 
 
     # stopword removal
